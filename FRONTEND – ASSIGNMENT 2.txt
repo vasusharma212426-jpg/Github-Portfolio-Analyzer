@@ -1,0 +1,509 @@
+# FRONTEND – ASSIGNMENT 2
+
+**Name:** Vasu Sharma
+**Course:** B.Tech CSE
+**Subject:** Frontend Development
+
+---
+
+## Q1. HTTP Request–Response Cycle
+
+Whenever we open a website, our browser and the web server communicate with each other. This communication happens through the **HTTP Request–Response Cycle**.
+
+For example, when we type `www.example.com` in a browser, the browser asks the server for the required webpage. The server processes this request and sends the requested information back.
+
+### Steps involved:
+
+1. The user enters a website URL.
+2. The browser creates an HTTP request.
+3. The request is sent to the web server.
+4. The server processes the request and searches for the required resource.
+5. The server sends an HTTP response.
+6. The browser receives the response and displays the webpage.
+
+### Simple Flow:
+
+```text
+User
+  ↓
+Enters URL
+  ↓
+Web Browser
+  ↓
+HTTP Request
+  ↓
+Web Server
+  ↓
+HTTP Response
+  ↓
+Web Browser
+  ↓
+Web Page
+```
+
+---
+
+## Q2. Introduction to Web Technologies
+
+### 1. HTML
+
+HTML means **HyperText Markup Language**. It is used to build the basic structure of a webpage.
+
+Using HTML, we can add headings, paragraphs, images, links, tables, forms and many other elements.
+
+**Example:**
+
+```html
+<h1>Welcome to My Website</h1>
+```
+
+---
+
+### 2. CSS
+
+CSS means **Cascading Style Sheets**. It controls how the HTML elements appear on the screen.
+
+It can be used to change colours, fonts, borders, spacing, backgrounds and layouts.
+
+**Example:**
+
+```css
+h1 {
+    color: blue;
+}
+```
+
+---
+
+### 3. JavaScript
+
+JavaScript adds **logic and interaction** to a webpage. For example, it can respond when a user clicks a button or submits a form.
+
+**Example:**
+
+```javascript
+alert("Welcome!");
+```
+
+---
+
+### 4. Bootstrap
+
+Bootstrap is a frontend framework that provides pre-designed components and a responsive grid system.
+
+Instead of creating every button, card or layout from scratch, developers can use Bootstrap classes.
+
+Some commonly used components are:
+
+* Buttons
+* Cards
+* Navigation bars
+* Forms
+* Grids
+
+---
+
+### 5. jQuery
+
+jQuery is a JavaScript library designed to make common JavaScript operations shorter and easier.
+
+It was especially popular for selecting HTML elements, handling events and creating animations.
+
+---
+
+### 6. React.js
+
+React.js is a JavaScript library for creating user interfaces.
+
+Its main feature is the use of **components**. A large webpage can be divided into smaller reusable parts such as:
+
+```text
+Navbar
+   ↓
+Header
+   ↓
+Product Card
+   ↓
+Footer
+```
+
+This makes large frontend applications easier to organize.
+
+---
+
+## Q3. Client-Side vs. Server-Side Technologies
+
+A website generally has two sides: the **client side** and the **server side**.
+
+### Client-Side
+
+Client-side code runs inside the user's browser.
+
+It is mainly responsible for what the user sees and interacts with.
+
+**Examples:**
+
+* HTML
+* CSS
+* JavaScript
+
+### Server-Side
+
+Server-side code runs on the web server. It handles operations that should not be performed directly in the browser, such as processing data, authentication and database operations.
+
+**Examples:**
+
+* Python
+* Java
+* PHP
+* Node.js
+
+### Difference
+
+| Client-Side                    | Server-Side                           |
+| ------------------------------ | ------------------------------------- |
+| Runs in the browser            | Runs on the server                    |
+| Handles user interface         | Handles backend processing            |
+| Works with webpage interaction | Works with databases and server logic |
+| HTML, CSS, JavaScript          | Python, Java, PHP, Node.js            |
+
+---
+
+## Q4. Block-Level Elements in HTML
+
+Block-level elements are elements that generally occupy their own line.
+
+For example, if we place two `<p>` elements one after another, they normally appear on separate lines.
+
+### Main features:
+
+1. They normally begin on a new line.
+2. They can occupy the available width.
+3. They can contain other elements.
+4. They are useful for arranging the main structure of a webpage.
+
+### Examples:
+
+```html
+<div>
+<p>
+<h1>
+<table>
+<section>
+```
+
+For example:
+
+```html
+<h1>My Portfolio</h1>
+<p>Welcome to my website.</p>
+```
+
+The heading and paragraph normally appear on separate lines.
+
+---
+
+## Q5. Semantic HTML Elements
+
+Semantic elements are HTML tags whose names tell us what type of content they contain.
+
+For example, `<header>` clearly indicates that the content is related to the header of the webpage.
+
+### Common semantic elements:
+
+* `<header>` – Contains introductory or header content.
+* `<nav>` – Contains navigation links.
+* `<section>` – Groups related content.
+* `<article>` – Represents an independent piece of content.
+* `<footer>` – Contains footer information.
+
+### Why are they useful?
+
+Semantic HTML makes the code easier for developers to understand. It also helps search engines and accessibility tools understand the structure of the webpage.
+
+For example:
+
+```html
+<header>
+    <h1>My Portfolio</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+</nav>
+
+<section>
+    <h2>My Projects</h2>
+</section>
+
+<footer>
+    Copyright 2026
+</footer>
+```
+
+---
+
+## Q6. Creating a Table Using HTML
+
+HTML tables are useful for displaying information in rows and columns.
+
+The `<table>` tag creates the table, `<tr>` creates a row, `<th>` creates a heading cell and `<td>` creates a normal data cell.
+
+### Example:
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Table</title>
+</head>
+
+<body>
+
+<table border="1" cellpadding="10" cellspacing="0">
+
+<tr>
+    <th>Sr. No.</th>
+    <th>Name</th>
+    <th>Designation</th>
+    <th>Department</th>
+</tr>
+
+<tr>
+    <td>1</td>
+    <td>Rahul</td>
+    <td>Manager</td>
+    <td>Sales</td>
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Priya</td>
+    <td>Developer</td>
+    <td>IT</td>
+</tr>
+
+<tr>
+    <td>3</td>
+    <td>Aman</td>
+    <td>Executive</td>
+    <td>HR</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+```
+
+---
+
+## Q7. Creating a Nested List Using HTML
+
+A nested list means placing one list inside another list.
+
+For example, we can create a main category called **Programming Languages** and place different languages inside it.
+
+### Example:
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nested List</title>
+</head>
+
+<body>
+
+<ul>
+
+    <li>Programming Languages
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>JavaScript</li>
+        </ul>
+    </li>
+
+</ul>
+
+</body>
+</html>
+```
+
+Here, the inner `<ul>` is placed inside the `<li>` element of the outer list.
+
+---
+
+## Q8. Types of CSS
+
+CSS can be added to an HTML webpage in three main ways.
+
+### 1. Inline CSS
+
+Inline CSS is written directly inside the HTML tag using the `style` attribute.
+
+```html
+<p style="color: blue;">
+    Hello World
+</p>
+```
+
+It is suitable when we need to apply a style to one particular element.
+
+---
+
+### 2. Internal CSS
+
+Internal CSS is written inside the `<style>` tag, usually within the `<head>` section.
+
+```html
+<style>
+
+p {
+    color: blue;
+    font-size: 20px;
+}
+
+</style>
+```
+
+It is useful when the styles are mainly required for a single webpage.
+
+---
+
+### 3. External CSS
+
+External CSS is stored in a separate `.css` file.
+
+For example:
+
+```html
+<link rel="stylesheet" href="style.css">
+```
+
+The CSS file can then contain:
+
+```css
+p {
+    color: blue;
+}
+```
+
+External CSS is useful when multiple webpages need to use the same design.
+
+---
+
+## Q9. Practical Understanding
+
+HTML, CSS and JavaScript work together but each has a different responsibility.
+
+### HTML – Structure
+
+HTML decides **what is present** on the webpage.
+
+For example:
+
+```html
+<h1>My Portfolio</h1>
+<p>Welcome to my website.</p>
+```
+
+---
+
+### CSS – Appearance
+
+CSS decides **how the content looks**.
+
+For example:
+
+```css
+h1 {
+    color: darkblue;
+    font-size: 35px;
+}
+```
+
+---
+
+### JavaScript – Behaviour
+
+JavaScript decides **how the webpage behaves** when the user interacts with it.
+
+For example:
+
+```javascript
+function showMessage() {
+    alert("Button clicked!");
+}
+```
+
+### In short:
+
+```text
+HTML       → Structure
+CSS        → Appearance
+JavaScript → Behaviour
+```
+
+---
+
+## Q10. Short Answer
+
+### a. What is the role of Bootstrap in web development?
+
+Bootstrap makes frontend development faster by providing ready-to-use CSS classes and components.
+
+It also provides a responsive grid system, which helps websites adjust their layout according to different screen sizes.
+
+For example, developers can quickly create buttons, cards, forms and navigation bars using Bootstrap classes.
+
+---
+
+### b. What is jQuery and why was it widely used?
+
+jQuery is a JavaScript library that simplifies many common tasks.
+
+It provides easier methods for:
+
+* Selecting HTML elements
+* Handling events
+* Changing webpage content
+* Creating animations
+
+It became popular because developers could perform many common tasks with less code.
+
+---
+
+### c. What is React.js and what problem does it solve?
+
+React.js is a JavaScript library used to create interactive user interfaces.
+
+One of its important concepts is **component-based development**. Instead of creating one huge webpage, developers can divide the interface into reusable components.
+
+For example:
+
+```text
+App
+│
+├── Navbar
+├── Sidebar
+├── Product Card
+└── Footer
+```
+
+This makes applications easier to develop, update and maintain.
+
+---
+
+# CONCLUSION
+
+Frontend development is mainly concerned with creating the part of a website that users see and interact with.
+
+HTML provides the structure, CSS controls the appearance, and JavaScript adds behaviour. Frameworks and libraries such as Bootstrap, jQuery and React.js provide additional tools that can make frontend development faster and more organized.
+
+Together, these technologies form an important foundation for building modern websites and web applications.
